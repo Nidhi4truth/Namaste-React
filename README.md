@@ -51,13 +51,11 @@ Hello World Project Using React
 
 Nested tags in React
 
- /*  
  <div id="parent">
    <div id="child">
      <h1>Heading inside div</h1>
    </div>
  </div>
- */
 
  For creating the following structure using React we can write code like below:
 

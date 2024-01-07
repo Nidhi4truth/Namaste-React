@@ -1,0 +1,81 @@
+# Episode 2 - Igniting our app
+
+To push the code into the production, we need to do a lot of processing
+in local like compressing,minifying the images, removing comments etc.
+
+React is fast but it need many other packages/libraries which help it
+making fast.
+
+NPM is not Node Package Manager.It doesnot have a full form.
+NPM manages package.
+NPM is the standard repository for all the packages.
+Packages/Libraries/Utilities are hosted on npm.
+
+To add npm inside the app,we need to execute the command
+npm init
+After executing this package.json is created automatically.
+package.json is configuration for npm.
+
+# Bundler
+Bundler bundles orpackages the application properly so that it can shipped to production.
+
+Examples - webpack,parcel
+
+Features of Parcel
+1.Dev Build
+2.Local Server
+3.HMR - Hot Module Replacement
+4.Uses File Watching Algorithm - Written in C++
+5.Faster builds - Caching
+6.Image optimization
+7.Minification
+8.Bundling
+9.Compressing
+10.Consistent hashing
+11.Code splitting
+12.Differential bundling - to support older browsers
+13.Dignostic - Error handling
+14.Tree shaking - Remove unused code.
+15.Different prod and dev bundles.
+
+create-react-app uses webpack bundler behind the scene.
+
+npm install -D parcel
+This D is for dev dependency.
+
+There are two types of dependencies
+1.Normal - This is required both in production as well as development.
+2.Dev - This is required only during development.
+
+package.json keep track of all the dependencies inside the project.
+
+^ -> Upgrade to minor version.
+~ -> Upgrade to major version.
+
+package.lock.json keep track of the exact version of packages and also the version of transitive dependencies.
+
+package.json contains approx version.
+
+Transitive dependency -> For example if you want to have parcel in your application,you will install that,but the parcel is dependent on some other library and same it goes down.So these dependent libraries are called transitive dependencies.
+
+We don't need to push node_modules to git because that can be regenerated using package.json and package.lock.json.
+
+# Ignite the application using parcel
+npx parcel index.html
+
+This command host the application into the server.
+
+npx is used to execute the package.
+
+CDN is not the correct way of bringing React and ReactDom into the application as it is expensive operation,it calling the network and also it is calling only the specific version,so every time version changes,we need to manually update the cdn links.
+
+So the best way is to use npm
+npm install react
+npm install react-dom
+
+Now these dependencies are there in node modules,we just need to import in the file.
+
+Way of build
+
+npx parcel build index.html ---> production build
+npx parcel index.html ---> normal build

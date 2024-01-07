@@ -11,6 +11,15 @@ How to get React into your project?
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
+2.Using create-react-app
+3.Using NPM.CDN is not the correct way of bringing React and ReactDom into the application as it is expensive operation,it is calling fron the network every time and also it is calling only the specific version,so every time version changes,we need to manually update the cdn links.
+
+So the best way is to use npm
+npm install react
+npm install react-dom
+
+Now these dependencies are there in node modules,we just need to import in the file.
+
 Difference between react.development.js and react-dom.development.js are ->
 
 react.development.js

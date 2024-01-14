@@ -17,7 +17,7 @@ After executing this package.json is created automatically.
 package.json is configuration for npm.
 
 # Bundler
-Bundler bundles orpackages the application properly so that it can shipped to production.
+Bundler bundles or packages the application properly so that it can shipped to production.
 
 Examples - webpack,parcel
 

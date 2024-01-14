@@ -1,0 +1,58 @@
+Laying the foundation
+=======================
+
+# Npx parcel index.html
+
+This will execute development build for us.And it will host the application at 1234.
+This command means we are executing npm package parcel and give source file as index.html.
+
+This command is different for production and development build.
+
+According to the industry standards it is recommended to use scripts to build the project.This we can do by adding -
+"scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+in package.json.
+
+After this we need to just execute npm run start,it will do the same thing.
+
+We can also use the shortcut npm start as well ,but npm run build will not work as npm build,we have to right the full command
+
+# React.createElement ==> React Element ==> JS Object ==> Render onto DOM ==> Html tag
+
+# JSX ==> Babel transpiles it to React.createElement ==> React Element ==> JS Object ==> Render onto DOM ==> Html tag
+
+JSX
+========
+
+JSX —> Javascript syntax to create. React.createElement —> Here we merge HTML and JS.
+
+JSX is not HTML in JS but it is HTML like or XML like syntax.
+
+const jsxHeading = <h1>Namaste React Using JSX</h1>
+This is react element.
+
+JS Engine understands ECMAScript.
+
+JSX(transpired before it reaches the JS Engine) - This is done by Parcel package which it internally uses to package Babel for compiling the JSX or React code to JS.
+
+Babel is a JS compiler.
+
+React Component
+===============
+Everything in React is component.
+
+There are two types of component
+1. Class Based Components - OLD - It use JS classes
+2. Functional Components - NEW - It use JS functions
+
+React functional component is normal JS function that returns JSX/React element.
+
+# How to render functional components
+root.render(<HeadingComponent/>);
+
+JSX is a mix of JS and HTML.We can write any JS code inside {}
+
+JSX sanitises the data coming, which prevent cross site scripting attack for you.
+

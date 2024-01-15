@@ -1,0 +1,46 @@
+Episode 04 - Talk is cheap, show me the code!
+==============================================
+
+# Food ordering app
+
+Main Components
+1. Header
+    - Logo
+    - Nav Items
+2. Body
+    - Search
+    - RestaurantContainer
+        - RestaurantCards
+            - Img
+            - Name of restaurant, star rating, cusine, delivery time etc
+3. Footer
+    - Links
+    - Address
+    - Contact
+    - Copyright
+
+# Props
+Props = Normal arguments to a function.
+
+# Config-Driven UI - UI is driven by config
+Controlling UI using data.For example - For a food ordering application like Swiggy,we find offers and restruant names according the place we are present,does we create different UI for different places - No,here we use config driven UI and this config comes from backend.
+
+# Why to add key when we loop on a array to render any container?
+When there are components at same level,they should have unique id. For example
+    <div class="resContainer">
+      {
+        resList.map(res => <RestaurantCard key={res.data.id} resObj={res} />)
+      }
+Here resConatiner is the parent and it have multiple RestaurantCard components.
+
+Suppose a new restaurant get added in the list at the first place,if we don't add id,React will not know which new restaurant card is added and it will rerender all the cards.
+
+If we add id,then React will know which new id is added and it will rerender only the new card.
+
+React don't recommend using indexes as keys if the order of items may change.This can negatively impact performance and may cause issyes with component state.
+
+Index as a key is an anti pattern.
+
+
+
+

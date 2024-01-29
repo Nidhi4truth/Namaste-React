@@ -37,3 +37,7 @@
     height: 130px;
 
 }
+.filter-btn{
+    padding: 10px;
+    cursor: pointer;
+}

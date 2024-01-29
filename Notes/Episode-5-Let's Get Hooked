@@ -1,0 +1,37 @@
+Episode 5: Let's Get Hooked
+============================
+
+# There are two types of export
+1. Default
+2. Named
+
+In a file we can have only one default export.
+If you are using named export then at the time of import enclose the name of the file in curly brackets.
+React is fast in DOM manipulation.
+
+# React Hooks
+Normal JS Utility functions given by React.
+useState() -  Super powerful state variable
+useEffect()
+
+Whenever a state variable updates,React rerenders the component.
+
+React makes the DOM manipulation fast.
+
+# Reconiliation Algorithm / React Fiber (React 16)
+res-conatiner has many restaurant cards ----> rc1,rc2,rc3,rc4,rc5,rc6,rc7.
+
+After filtering we have to show only 3 cards ---> rc1,rc2 and rc3.
+
+- Actual DOM is the tags.
+- React creates a virtual dom.
+- Virtual DOM is representation of actual dom.
+
+- Diff Algorithm
+Finds out the difference between updated and previous DOM.
+
+When React finds out the difference between the updated and previous DOM, it actually rerenders the component.
+
+
+
+
